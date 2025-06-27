@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OSINT Tools Framework</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>OSINT Tools Framework</h1>
+
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="Search categories or tools..."
+    autocomplete="off"
+  />
+
+  <div id="categoriesContainer">
+
+    <section class="category" id="worldTimezones">
+      <h2>World Timezones</h2>
+      <ul id="timezonesList" class="timezone-list">
+        <!-- Times injected by JS -->
+      </ul>
+    </section>
+
+    <section class="category">
+      <h2>IP Grabbers</h2>
+      <ul>
+        <li><a href="https://grabify.link/" target="_blank" rel="noopener noreferrer">Grabify</a></li>
+        <li><a href="https://iplogger.org/" target="_blank" rel="noopener noreferrer">IPLogger</a></li>
+        <li><a href="https://ipgrabber.ru/" target="_blank" rel="noopener noreferrer">IPGrabber.ru</a></li>
+        <li><a href="https://blazingtools.com/ip-tracker" target="_blank" rel="noopener noreferrer">BlazingTools IP Tracker</a></li>
+        <li><a href="https://iptrackeronline.com/" target="_blank" rel="noopener noreferrer">IPTrackerOnline</a></li>
+      </ul>
+    </section>
+
+    <section class="category">
+      <h2>VPN Services</h2>
+      <ul>
+        <li><a href="https://www.expressvpn.com/" target="_blank" rel="noopener noreferrer">ExpressVPN</a></li>
+        <li><a href="https://www.nordvpn.com/" target="_blank" rel="noopener noreferrer">NordVPN</a></li>
+        <li><a href="https://www.cyberghostvpn.com/" target="_blank" rel="noopener noreferrer">CyberGhost VPN</a></li>
+        <li><a href="https://surfshark.com/" target="_blank" rel="noopener noreferrer">Surfshark</a></li>
+        <li><a href="https://protonvpn.com/" target="_blank" rel="noopener noreferrer">ProtonVPN</a></li>
+      </ul>
+    </section>
+
+    <section class="category">
+      <h2>YouTube Tools</h2>
+      <ul>
+        <li><a href="https://youtubedownloader.io/" target="_blank" rel="noopener noreferrer">YouTube Downloader</a></li>
+        <li><a href="https://commentpicker.com/youtube-comments.php" target="_blank" rel="noopener noreferrer">YouTube Comment Picker</a></li>
+        <li><a href="https://socialblade.com/" target="_blank" rel="noopener noreferrer">Social Blade</a></li>
+        <li><a href="https://vidooly.com/" target="_blank" rel="noopener noreferrer">Vidooly</a></li>
+        <li><a href="https://ytcount.com/" target="_blank" rel="noopener noreferrer">YouTube Subscriber Count</a></li>
+      </ul>
+    </section>
+
+    <section class="category">
+      <h2>Breaches / Leaks</h2>
+      <ul>
+        <li><a href="https://haveibeenpwned.com/" target="_blank" rel="noopener noreferrer">Have I Been Pwned</a></li>
+        <li><a href="https://dehashed.com/" target="_blank" rel="noopener noreferrer">Dehashed</a></li>
+        <li><a href="https://snusbase.com/" target="_blank" rel="noopener noreferrer">Snusbase</a></li>
+        <li><a href="https://leakcheck.io/" target="_blank" rel="noopener noreferrer">LeakCheck</a></li>
+        <li><a href="https://ghostproject.fr/" target="_blank" rel="noopener noreferrer">GhostProject</a></li>
+      </ul>
+    </section>
+
+    <section class="category">
+      <h2>Deep & Dark Web</h2>
+      <ul>
+        <li><a href="https://onion.live/" target="_blank" rel="noopener noreferrer">Onion.live</a></li>
+        <li><a href="https://ahmia.fi/" target="_blank" rel="noopener noreferrer">Ahmia</a></li>
+        <li><a href="https://dark.fail/" target="_blank" rel="noopener noreferrer">Dark.fail</a></li>
+        <li><a href="https://torlinkbgs6aabns.onion.link/" target="_blank" rel="noopener noreferrer">TorLinks</a></li>
+        <li><a href="https://dnstats.net/" target="_blank" rel="noopener noreferrer">DNStats</a></li>
+      </ul>
+    </section>
+
+    <section class="category">
+      <h2>Reddit Tools</h2>
+      <ul>
+        <li><a href="https://redditmetrics.com/" target="_blank" rel="noopener noreferrer">Reddit Metrics</a></li>
+        <li><a href="https://frontpagemetrics.com/" target="_blank" rel="noopener noreferrer">FrontPageMetrics</a></li>
+        <li><a href="https://ceddit.com/" target="_blank" rel="noopener noreferrer">Ceddit</a></li>
+        <li><a href="https://removeddit.com/" target="_blank" rel="noopener noreferrer">Removeddit</a></li>
+        <li><a href="https://snoopreport.com/" target="_blank" rel="noopener noreferrer">SnoopReport</a></li>
+      </ul>
+    </section>
+
+    <section class="category">
+      <h2>TikTok Tools</h2>
+      <ul>
+        <li><a href="https://tiktokdownloader.org/" target="_blank" rel="noopener noreferrer">TikTok Downloader</a></li>
+        <li><a href="https://musicallydown.com/" target="_blank" rel="noopener noreferrer">MusicallyDown</a></li>
+        <li><a href="https://exolyt.com/" target="_blank" rel="noopener noreferrer">Exolyt</a></li>
+        <li><a href="https://snaptik.app/" target="_blank" rel="noopener noreferrer">SnapTik</a></li>
+        <li><a href="https://tokboard.com/" target="_blank" rel="noopener noreferrer">TokBoard</a></li>
+      </ul>
+    </section>
+
+    <section class="category">
+      <h2>Stock Photos</h2>
+      <ul>
+        <li><a href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">Unsplash</a></li>
+        <li><a href="https://pexels.com/" target="_blank" rel="noopener noreferrer">Pexels</a></li>
+        <li><a href="https://pixabay.com/" target="_blank" rel="noopener noreferrer">Pixabay</a></li>
+        <li><a href="https://stocksnap.io/" target="_blank" rel="noopener noreferrer">StockSnap.io</a></li>
+        <li><a href="https://burst.shopify.com/" target="_blank" rel="noopener noreferrer">Burst</a></li>
+      </ul>
+    </section>
+
+    <section class="category">
+      <h2>ID Generators (Name Generators)</h2>
+      <ul>
+        <li><a href="https://www.fakenamegenerator.com/" target="_blank" rel="noopener noreferrer">Fake Name Generator</a></li>
+        <li><a href="https://www.namegenerator.in/" target="_blank" rel="noopener noreferrer">Name Generator</a></li>
+        <li><a href="https://randomuser.me/" target="_blank" rel="noopener noreferrer">Random User Generator</a></li>
+        <li><a href="https://www.behindthename.com/random/" target="_blank" rel="noopener noreferrer">Behind the Name Random Generator</a></li>
+        <li><a href="https://www.thispersondoesnotexist.com/" target="_blank" rel="noopener noreferrer">This Person Does Not Exist</a></li>
+      </ul>
+    </section>
+
+    <section class="category">
+      <h2>Instagram Tools</h2>
+      <ul>
+        <li><a href="https://instadp.io/" target="_blank" rel="noopener noreferrer">InstaDP</a></li>
+        <li><a href="https://gramho.com/" target="_blank" rel="noopener noreferrer">Gramho</a></li>
+        <li><a href="https://storiesig.app/" target="_blank" rel="noopener noreferrer">StoriesIG</a></li>
+        <li><a href="https://inflact.com/tools/instagram-stories-viewer/" target="_blank" rel="noopener noreferrer">Inflact Stories Viewer</a></li>
+        <li><a href="https://smodin.io/instagram-downloader" target="_blank" rel="noopener noreferrer">Instagram Downloader</a></li>
+      </ul>
+    </section>
+
+    <section class="category">
+      <h2>Hash Decrypt / Encrypt</h2>
+      <ul>
+        <li><a href="https://hashes.com/en/decrypt/hash" target="_blank" rel="noopener noreferrer">Hashes.com</a></li>
+        <li><a href="https://md5decrypt.net/en/" target="_blank" rel="noopener noreferrer">MD5Decrypt.net</a></li>
+        <li><a href="https://www.onlinehashcrack.com/" target="_blank" rel="noopener noreferrer">OnlineHashCrack</a></li>
+        <li><a href="https://hashkiller.co.uk/" target="_blank" rel="noopener noreferrer">HashKiller</a></li>
+        <li><a href="https://passwordsgenerator.net/md5-hash-generator/" target="_blank" rel="noopener noreferrer">MD5 Hash Generator</a></li>
+      </ul>
+    </section>
+
+    <section class="category">
+      <h2>Twitter Tools</h2>
+      <ul>
+        <li><a href="https://foller.me/" target="_blank" rel="noopener noreferrer">Foller.me</a></li>
+        <li><a href="https://tweetdeck.twitter.com/" target="_blank" rel="noopener noreferrer">TweetDeck</a></li>
+        <li><a href="https://nitter.net/" target="_blank" rel="noopener noreferrer">Nitter</a></li>
+        <li><a href="https://tweeterid.com/" target="_blank" rel="noopener noreferrer">TweeterID</a></li>
+        <li><a href="https://twitonomy.com/" target="_blank" rel="noopener noreferrer">Twitonomy</a></li>
+      </ul>
+    </section>
+
+    <section class="category">
+      <h2>Discord Tools</h2>
+      <ul>
+        <li><a href="https://discordlookup.com/" target="_blank" rel="noopener noreferrer">Discord Lookup</a></li>
+        <li><a href="https://discord.id/" target="_blank" rel="noopener noreferrer">Discord ID</a></li>
+        <li><a href="https://bots.ondiscord.xyz/" target="_blank" rel="noopener noreferrer">Discord Bots List</a></li>
+        <li><a href="https://discordstatus.com/" target="_blank" rel="noopener noreferrer">Discord Status</a></li>
+        <li><a href="https://top.gg/" target="_blank" rel="noopener noreferrer">Top.gg</a></li>
+      </ul>
+    </section>
+
+    <section class="category">
+      <h2>Social Media Search</h2>
+      <ul>
+        <li><a href="https://inteltechniques.com/menu.html" target="_blank" rel="noopener noreferrer">IntelTechniques</a></li>
+        <li><a href="https://social-searcher.com/" target="_blank" rel="noopener noreferrer">Social Searcher</a></li>
+        <li><a href="https://pipl.com/" target="_blank" rel="noopener noreferrer">Pipl</a></li>
+        <li><a href="https://www.spokeo.com/" target="_blank" rel="noopener noreferrer">Spokeo</a></li>
+        <li><a href="https://peekyou.com/" target="_blank" rel="noopener noreferrer">PeekYou</a></li>
+      </ul>
+    </section>
+
+    <section class="category">
+      <h2>Browser / IP / DNS Leak Tests</h2>
+      <ul>
+        <li><a href="https://ipleak.net/" target="_blank" rel="noopener noreferrer">IPLeak.net</a></li>
+        <li><a href="https://dnsleaktest.com/" target="_blank" rel="noopener noreferrer">DNS Leak Test</a></li>
+        <li><a href="https://browserleaks.com/" target="_blank" rel="noopener noreferrer">BrowserLeaks</a></li>
+        <li><a href="https://www.dnsleak.com/" target="_blank" rel="noopener noreferrer">DNSLeak.com</a></li>
+        <li><a href="https://whoer.net/" target="_blank" rel="noopener noreferrer">Whoer.net</a></li>
+      </ul>
+    </section>
+
+    <section class="category">
+      <h2>General Search Engines</h2>
+      <ul>
+        <li><a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">Google</a></li>
+        <li><a href="https://www.bing.com/" target="_blank" rel="noopener noreferrer">Bing</a></li>
+        <li><a href="https://search.yahoo.com/" target="_blank" rel="noopener noreferrer">Yahoo Search</a></li>
+        <li><a href="https://duckduckgo.com/" target="_blank" rel="noopener noreferrer">DuckDuckGo</a></li>
+        <li><a href="https://startpage.com/" target="_blank" rel="noopener noreferrer">Startpage</a></li>
+      </ul>
+    </section>
+
+    <section class="category">
+      <h2>Android Emulators</h2>
+      <ul>
+        <li><a href="https://www.bluestacks.com/" target="_blank" rel="noopener noreferrer">BlueStacks</a></li>
+        <li><a href="https://www.noxplayer.com/" target="_blank" rel="noopener noreferrer">NoxPlayer</a></li>
+        <li><a href="https://ldplayer.net/" target="_blank" rel="noopener noreferrer">LDPlayer</a></li>
+        <li><a href="https://memuplay.com/" target="_blank" rel="noopener noreferrer">MEmu</a></li>
+        <li><a href="https://genymotion.com/" target="_blank" rel="noopener noreferrer">Genymotion</a></li>
+      </ul>
+    </section>
+
+    <section class="category">
+      <h2>Credit Card BIN Info</h2>
+      <ul>
+        <li><a href="https://binlist.net/" target="_blank" rel="noopener noreferrer">BinList</a></li>
+        <li><a href="https://bins.su/" target="_blank" rel="noopener noreferrer">Bins.su</a></li>
+        <li><a href="https://bincheck.io/" target="_blank" rel="noopener noreferrer">BinCheck.io</a></li>
+        <li><a href="https://binbase.com/" target="_blank" rel="noopener noreferrer">BinBase</a></li>
+        <li><a href="https://bin-db.com/" target="_blank" rel="noopener noreferrer">Bin-DB</a></li>
+      </ul>
+    </section>
+
+    <section class="category">
+      <h2>Bitcoin</h2>
+      <ul>
+        <li><a href="https://blockchain.com/explorer" target="_blank" rel="noopener noreferrer">Blockchain Explorer</a></li>
+        <li><a href="https://blockchair.com/" target="_blank" rel="noopener noreferrer">Blockchair</a></li>
+        <li><a href="https://btc.com/" target="_blank" rel="noopener noreferrer">BTC.com</a></li>
+        <li><a href="https://www.blockcypher.com/" target="_blank" rel="noopener noreferrer">BlockCypher</a></li>
+        <li><a href="https://bitref.com/" target="_blank" rel="noopener noreferrer">BitRef</a></li>
+      </ul>
+    </section>
+
+    <section class="category">
+      <h2>Cryptocurrency Search</h2>
+      <ul>
+        <li><a href="https://coinmarketcap.com/" target="_blank" rel="noopener noreferrer">CoinMarketCap</a></li>
+        <li><a href="https://coingecko.com/" target="_blank" rel="noopener noreferrer">CoinGecko</a></li>
+        <li><a href="https://cryptocompare.com/" target="_blank" rel="noopener noreferrer">CryptoCompare</a></li>
+        <li><a href="https://livecoinwatch.com/" target="_blank" rel="noopener noreferrer">LiveCoinWatch</a></li>
+        <li><a href="https://coinpaprika.com/" target="_blank" rel="noopener noreferrer">CoinPaprika</a></li>
+      </ul>
+    </section>
+
+  </div>
+
+  <script>
+    // Timezones
+    const timezones = [
+      { label: "UTC", zone: "UTC" },
+      { label: "New York (EST)", zone: "America/New_York" },
+      { label: "London (GMT)", zone: "Europe/London" },
+      { label: "Paris (CET)", zone: "Europe/Paris" },
+      { label: "Moscow (MSK)", zone: "Europe/Moscow" },
+      { label: "Tokyo (JST)", zone: "Asia/Tokyo" },
+      { label: "Sydney (AEST)", zone: "Australia/Sydney" },
+      { label: "Dubai (GST)", zone: "Asia/Dubai" },
+      { label: "Los Angeles (PST)", zone: "America/Los_Angeles" },
+    ];
+
+    const timezonesList = document.getElementById("timezonesList");
+
+    function updateTimes() {
+      timezonesList.innerHTML = "";
+      timezones.forEach(({ label, zone }) => {
+        const time = new Date().toLocaleTimeString("en-US", { timeZone: zone, hour12: false });
+        const li = document.createElement("li");
+        li.textContent = `${label}: ${time}`;
+        timezonesList.appendChild(li);
+      });
+    }
+
+    updateTimes();
+    setInterval(updateTimes, 1000);
+
+    // Search functionality
+    const searchInput = document.getElementById("searchInput");
+    const categoriesContainer = document.getElementById("categoriesContainer");
+
+    searchInput.addEventListener("input", () => {
+      const filter = searchInput.value.toLowerCase();
+
+      const categories = categoriesContainer.querySelectorAll("section.category");
+      categories.forEach((category) => {
+        const categoryName = category.querySelector("h2").textContent.toLowerCase();
+        const tools = category.querySelectorAll("ul li");
+        let visibleToolsCount = 0;
+
+        tools.forEach((tool) => {
+          const toolName = tool.textContent.toLowerCase();
+          if (toolName.includes(filter) || categoryName.includes(filter)) {
+            tool.style.display = "";
+            visibleToolsCount++;
+          } else {
+            tool.style.display = "none";
+          }
+        });
+
+        // Show category only if any tools visible or category name matches search
+        if (visibleToolsCount > 0 || categoryName.includes(filter)) {
+          category.style.display = "";
+        } else {
+          category.style.display = "none";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
